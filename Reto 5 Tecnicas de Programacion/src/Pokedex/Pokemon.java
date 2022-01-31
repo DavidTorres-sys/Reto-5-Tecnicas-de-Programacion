@@ -2,9 +2,9 @@ package Pokedex;
 
 public abstract class Pokemon {
 
-  private String nombre;
-  private int nivelSalud;
-  private byte nivel;
+  protected String nombre;
+  protected int nivelSalud;
+  protected byte nivel;
 
   public Pokemon(String nombre, int nivelSalud, byte nivel) {
     this.nombre = nombre;
@@ -12,9 +12,8 @@ public abstract class Pokemon {
     this.nivel = nivel;
   }
 
-  public abstract void evolucionar();
+  public abstract void evolucionar() throws NoEvolucionaException;
   public abstract void gritar();
-
   public void pokemon() {
     System.out.println("Pokemon: " + nombre + "\nNivel: " + nivel + "\nNivel de salud: " + nivelSalud);
   }

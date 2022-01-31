@@ -9,7 +9,6 @@ public class Charmander extends Pokemon {
   @Override
   public void evolucionar() {
     Charmeleon charmeleon = new Charmeleon();
-    System.out.println(charmeleon);
   }
 
   @Override
